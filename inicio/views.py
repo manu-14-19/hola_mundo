@@ -17,3 +17,10 @@ def saludo(request, nombre):
 
 def sobre_mi(request):
     return render(request, 'inicio/sobre_mi.html')
+
+def alumnos(request):
+    contexto = {
+        'titulo': 'Gestión de Alumnos',
+        'lista': ['Ana García', 'Bruno López', 'Carla Ruiz'],
+    }
+    return render(request, 'inicio/alumnos.html', contexto)
