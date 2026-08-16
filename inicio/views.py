@@ -13,3 +13,6 @@ def saludo(request, nombre):
         'mensaje': '¡Esta página fue creada por Manuela!',
     }
     return render(request, 'inicio/saludo.html', contexto)
+
+def sobre_mi(request):
+    return render(request, 'inicio/sobre_mi.html')
