@@ -10,6 +10,6 @@ def hola_mundo(request):
 def saludo(request, nombre):
     contexto = {
         'nombre': nombre,
-        'mensaje': '¡Bienvenido a mi página!',
+        'mensaje': '¡Esta página fue creada por Manuela!',
     }
     return render(request, 'inicio/saludo.html', contexto)
