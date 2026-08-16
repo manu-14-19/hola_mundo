@@ -1,10 +1,8 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <title>{{ titulo }}</title>
-</head>
-<body>
+{% extends 'base.html' %}
+
+{% block title %}Alumnos{% endblock %}
+
+{% block content %}
     <h1>{{ titulo }}</h1>
 
     <ul>
@@ -12,5 +10,4 @@
             <li>{{ alumno }}</li>
         {% endfor %}
     </ul>
-</body>
-</html>
+{% endblock %}

@@ -1,12 +1,9 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <title>Mi primera pagina Django</title>
-</head>
-<body>
+{% extends 'base.html' %}
+
+{% block title %}Saludo{% endblock %}
+
+{% block content %}
     <h1>¡Hola, {{ nombre }}! 👋</h1>
     <p>{{ mensaje }}</p>
-    <p>Modulo:{{ modulo }}</p>
-</body>
-</html>
+    <p>Módulo: {{ modulo }}</p>
+{% endblock %}
