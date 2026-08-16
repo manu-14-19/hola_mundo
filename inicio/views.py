@@ -11,6 +11,7 @@ def saludo(request, nombre):
     contexto = {
         'nombre': nombre,
         'mensaje': '¡Esta página fue creada por Manuela!',
+        'modulo': 'Gestión de Alumnos',
     }
     return render(request, 'inicio/saludo.html', contexto)
 
